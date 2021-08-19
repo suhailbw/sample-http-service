@@ -13,4 +13,4 @@ app.get("/ping",(req, resp) => {
 });
 
 
-app.listen(port, () => {console.log('started')});
+app.listen(process.env.port || port, () => {console.log('started')});
