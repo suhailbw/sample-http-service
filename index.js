@@ -7,4 +7,10 @@ app.get("/", (req, resp) => {
 	resp.send(env).end();
 });
 
+app.get("/ping",(req, resp) => {
+
+	resp.send("pong").end();
+});
+
+
 app.listen(port, () => {console.log('started')});
