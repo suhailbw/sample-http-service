@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 5000;
 
 app.get("/", (req, resp) => {
 	const env = require("fs").readFileSync("env.txt",{"encoding": "utf8"});
@@ -13,4 +13,4 @@ app.get("/ping",(req, resp) => {
 });
 
 
-app.listen(process.env.port || port, () => {console.log('started')});
+app.listen(port, () => {console.log('started')});
