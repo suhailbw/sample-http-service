@@ -1,0 +1,11 @@
+{
+  "name": "sample-http-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:suhailbw/sample-http-service.git",
+  "author": "<suhail.gupta@betterworks.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
