@@ -7,4 +7,9 @@ app.get("/", (req, resp) => {
 	resp.send(env).end();
 });
 
+app.get("/hello", (req, resp) => {
+	resp.json({"message": "hello"});
+});
+
+
 app.listen(port, () => {console.log('started')});
